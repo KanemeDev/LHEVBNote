@@ -11,7 +11,7 @@ Cet outil permet aux entraîneurs et responsables d'équipes de suivre efficacem
 
 ## Capture d'écran
 
-![Capture d'écran de la plateforme](https://ibb.co/TxYMFbVS)
+![Capture d'écran de la plateforme](https://i.ibb.co/wFBhxw9X/Capture-d-cran-2025-03-23-110847.png)
 
 ## Comment utiliser la plateforme
 
