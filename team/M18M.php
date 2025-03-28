@@ -9,7 +9,7 @@ $entraineur = "Tiemoko Samaké";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LHEVB - <?php echo $team?></title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/index.css">
     <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
 </head>
 <body>
@@ -20,7 +20,7 @@ $entraineur = "Tiemoko Samaké";
     <section>
         <div class="container">
             <div class="row flex-column flex-md-row align-items-center">
-                <div class="bg-lblue rounded text-light col-12 col-md-8 border">
+                <div class="bg-dark rounded text-light col-12 col-md-8 border">
                 <?php 
                     include('../functions/db.php');
                     $sql = "SELECT id, username, categorie, absences, entrainement FROM users WHERE categorie = '$team'";
@@ -41,7 +41,7 @@ $entraineur = "Tiemoko Samaké";
                             echo '  </div>';
                             echo '</div>';
                         }
-                        echo '  <button type="submit" class="btn btn-success">Valider</button>';
+                        echo '  <button type="submit" class="btn btn-success mt-2">Valider</button>';
                         echo '  <input type="hidden" name="team" value="' . htmlspecialchars($team) . '">';
                         echo '</form>';
                     } else {
