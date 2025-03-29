@@ -13,14 +13,14 @@
         <a href="admin.php">
             <img src="../img/logo.png" class="mb-4" style="width:110px;">
         </a>
-        <h1 class="mb-3">Ajouter un Joueur</h1>
+        <h1 class="mb-3 text-light">Ajouter un Joueur</h1>
         <form action="../functions/add_user.php" method="post" class="w-100 w-md-50 p-3">
             <div class="mb-3">
-                <label for="username" class="form-label">Nom du Joueur :</label>
+                <label for="username" class="text-light form-label">Nom du Joueur :</label>
                 <input type="text" name="username" id="username" class="form-control" required>
             </div>
             <div class="mb-3">
-                <label for="categorie" class="form-label">Catégorie</label>
+                <label for="categorie" class="text-light form-label">Catégorie</label>
                 <select name="categorie" id="categorie" class="form-select">
                     <option value="">Sélectionner une catégorie</option>
                     <option value="PNM">PNM</option>

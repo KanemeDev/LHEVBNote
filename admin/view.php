@@ -37,7 +37,7 @@ $conn->close();
         <a href="admin.php"><img src="../img/logo.png" class="mb-4" style="width:110px;"></a>
         <form action="" method="post">
             <div class="p-2">
-                <label for="categorie" class="form-label">Administration Catégorie</label>
+                <label for="categorie" class="form-label text-light">Administration Catégorie</label>
                 <select name="team" id="categorie" class="form-select">
                     <option value="">Sélectionner une catégorie</option>
                     <option value="PNM" <?= ($team == 'PNM') ? 'selected' : '' ?>>PNM</option>
@@ -56,14 +56,14 @@ $conn->close();
         </form>
         <form action="" method="post" class="mt-3">
             <input type="hidden" name="team" value="<?= htmlspecialchars($team) ?>">
-            <button type="submit" name="remove_training" class="btn btn-warning w-100 mb-2">Retirer un entraînement</button>
-            <button type="submit" name="reset_stats" class="btn btn-danger w-100">Reset absences/entraînements</button>
+            <button type="submit" name="remove_training" class="btn text-light btn-warning w-100 mb-2">Retirer un entraînement</button>
+            <button type="submit" name="reset_stats" class="btn text-light btn-danger w-100">Reset absences/entraînements</button>
         </form>
 
         <section>
             <div class="container">
                 <div class="row flex-column flex-md-row align-items-center p-3">
-                    <div class="bg-lblue rounded text-light col border">
+                    <div class="bg-dark rounded text-light col border">
                         <?php
                         include('../functions/db.php');
 

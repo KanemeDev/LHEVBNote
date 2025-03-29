@@ -5,7 +5,10 @@
 }
 
 body {
-    background-color: #e4e4e4;
+    position: relative;
+    background-image: url(../img/bg1.png);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .text-lblue {
