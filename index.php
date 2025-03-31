@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="d-flex flex-column align-items-center text-center text-blue">
-        <a href=""><img src="img/logo.png" style="width:110px;"></a>
+        <a href="admin/admin.php"><img src="img/logo.png" style="width:110px;"></a>
     </div>
     <section>
         <div class="row d-flex gx-0">

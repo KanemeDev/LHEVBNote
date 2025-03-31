@@ -10,18 +10,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $username = $conn->real_escape_string($_POST['username']);
         $categorie = $conn->real_escape_string($_POST['categorie']);
 
-        $sql = "UPDATE users SET categorie = '$categorie' WHERE username = '$username'";
+        $checkUserSql = "SELECT * FROM users WHERE username = '$username'";
+        $result = $conn->query($checkUserSql);
 
-        if ($conn->query($sql) === TRUE) {
-            header("Location: " . $_SERVER['HTTP_REFERER']);
-            exit();
+        if ($result->num_rows > 0) {
+            $sql = "UPDATE users SET categorie = '$categorie' WHERE username = '$username'";
+
+            if ($conn->query($sql) === TRUE) {
+                echo '<script>alert("Utilisateur Modifié !");window.location.href = "' . $_SERVER['HTTP_REFERER'] . '";</script>';
+                exit();
+            } else {
+                echo '<script>alert("Erreur lors de la mise à jour : ' . $conn->error . '");window.location.href = "' . $_SERVER['HTTP_REFERER'] . '";</script>';
+                exit();
+            }
         } else {
-            echo "Erreur : " . $conn->error;
-            header("Location: " . $_SERVER['HTTP_REFERER']);
+            echo '<script>alert("Utilisateur non trouvé !");window.location.href = "' . $_SERVER['HTTP_REFERER'] . '";</script>';
             exit();
         }
     } else {
-        header("Location: " . $_SERVER['HTTP_REFERER']);
+        echo '<script>alert("Veuillez remplir tous les champs.");window.location.href = "' . $_SERVER['HTTP_REFERER'] . '";</script>';
         exit();
     }
 }
