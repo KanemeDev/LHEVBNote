@@ -18,14 +18,6 @@ if (isset($_POST['absence'])) {
             $stmt->bind_param("i", $userId);
             $stmt->execute();
             $result = $stmt->get_result();
-            if ($row = $result->fetch_assoc()) {
-                $name = $row['username'];
-
-                $sql = "INSERT INTO date (name, date) VALUES (?, ?)";
-                $stmt = $conn->prepare($sql);
-                $stmt->bind_param("ss", $name, $date);
-                $stmt->execute();
-            }
         }
     }
 }
