@@ -9,10 +9,6 @@ Cet outil permet aux entraîneurs et responsables d'équipes de suivre efficacem
 - **Gestion des retards** : Notez les retards des joueurs pour un suivi précis de leur ponctualité.
 - **Ajout de joueurs** : Ajoutez de nouveaux joueurs à vos équipes en quelques clics.
 
-## Image
-
-![image]((https://i.ibb.co/wFBhxw9X/Capture-d-cran-2025-03-23-110847.png) "Titre de l'image").
-
 ## Comment utiliser la plateforme
 
 1. **Faire l'appel** : Sur la page d'acceuil, cliquez sur l'equipe de votre choix puis cochez les absents et validez.
